@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FC7182032A2E82270095581C /* MarvelComics_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7182022A2E82270095581C /* MarvelComics_SwiftUIApp.swift */; };
-		FC7182052A2E82270095581C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7182042A2E82270095581C /* ContentView.swift */; };
 		FC7182072A2E82280095581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7182062A2E82280095581C /* Assets.xcassets */; };
 		FC71820A2A2E82280095581C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7182092A2E82280095581C /* Preview Assets.xcassets */; };
 		FC7182142A2E82280095581C /* MarvelComics_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7182132A2E82280095581C /* MarvelComics_SwiftUITests.swift */; };
 		FC71821E2A2E82280095581C /* MarvelComics_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71821D2A2E82280095581C /* MarvelComics_SwiftUIUITests.swift */; };
 		FC7182202A2E82280095581C /* MarvelComics_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71821F2A2E82280095581C /* MarvelComics_SwiftUIUITestsLaunchTests.swift */; };
+		FC71822F2A2E825F0095581C /* APIClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71822C2A2E825F0095581C /* APIClass.swift */; };
+		FC7182302A2E825F0095581C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71822D2A2E825F0095581C /* ContentView.swift */; };
+		FC7182312A2E825F0095581C /* ComickBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71822E2A2E825F0095581C /* ComickBook.swift */; };
+		FC7182332A2E826B0095581C /* String+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7182322A2E826B0095581C /* String+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		FC7181FF2A2E82270095581C /* MarvelComics_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelComics_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7182022A2E82270095581C /* MarvelComics_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelComics_SwiftUIApp.swift; sourceTree = "<group>"; };
-		FC7182042A2E82270095581C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC7182062A2E82280095581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC7182092A2E82280095581C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC71820F2A2E82280095581C /* MarvelComics_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelComics_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,11 @@
 		FC7182192A2E82280095581C /* MarvelComics_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelComics_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC71821D2A2E82280095581C /* MarvelComics_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelComics_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		FC71821F2A2E82280095581C /* MarvelComics_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelComics_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC71822C2A2E825F0095581C /* APIClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClass.swift; sourceTree = "<group>"; };
+		FC71822D2A2E825F0095581C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC71822E2A2E825F0095581C /* ComickBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComickBook.swift; sourceTree = "<group>"; };
+		FC7182322A2E826B0095581C /* String+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extention.swift"; sourceTree = "<group>"; };
+		FC7182342A2E82D20095581C /* MarvelComics-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MarvelComics-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,12 @@
 		FC7182012A2E82270095581C /* MarvelComics_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FC7182342A2E82D20095581C /* MarvelComics-SwiftUI-Info.plist */,
 				FC7182022A2E82270095581C /* MarvelComics_SwiftUIApp.swift */,
-				FC7182042A2E82270095581C /* ContentView.swift */,
+				FC7182322A2E826B0095581C /* String+Extention.swift */,
+				FC71822C2A2E825F0095581C /* APIClass.swift */,
+				FC71822E2A2E825F0095581C /* ComickBook.swift */,
+				FC71822D2A2E825F0095581C /* ContentView.swift */,
 				FC7182062A2E82280095581C /* Assets.xcassets */,
 				FC7182082A2E82280095581C /* Preview Content */,
 			);
@@ -257,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC7182052A2E82270095581C /* ContentView.swift in Sources */,
+				FC7182332A2E826B0095581C /* String+Extention.swift in Sources */,
+				FC7182312A2E825F0095581C /* ComickBook.swift in Sources */,
 				FC7182032A2E82270095581C /* MarvelComics_SwiftUIApp.swift in Sources */,
+				FC71822F2A2E825F0095581C /* APIClass.swift in Sources */,
+				FC7182302A2E825F0095581C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +434,7 @@
 				DEVELOPMENT_TEAM = SAZ5K2949S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MarvelComics-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +464,7 @@
 				DEVELOPMENT_TEAM = SAZ5K2949S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MarvelComics-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
